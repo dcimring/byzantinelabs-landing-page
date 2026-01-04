@@ -1,16 +1,68 @@
-# React + Vite
+# ByzantineLabs Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance landing page for **ByzantineLabs**, built with the latest web technologies to reflect the company's focus on Web3, DAOs, and advanced financial infrastructure.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **Modern Aesthetic:** Dark-mode design with a Slate/Sky/Indigo color palette suitable for the Web3 industry.
+*   **Dynamic Visuals:** Interactive "Particle Network" background symbolizing blockchain connectivity.
+*   **Smooth Animations:** Scroll-reveal effects and transitions powered by Framer Motion.
+*   **Responsive Design:** Fully optimized for all devices, featuring glassmorphism UI elements.
+*   **Performance:** Built on Vite for lightning-fast development and production builds.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   [React](https://react.dev/) - UI Library
+*   [Vite](https://vitejs.dev/) - Build Tool
+*   [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS Framework (v4)
+*   [Framer Motion](https://www.framer.com/motion/) - Animation Library
+*   [tsparticles](https://particles.js.org/) - Particle Background System
+*   [Lucide React](https://lucide.dev/) - Icons
 
-## Expanding the ESLint configuration
+## 📦 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+*   Node.js (v18 or higher)
+*   npm
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/dcimring/byzantinelabs-landing-page.git
+    cd byzantinelabs-landing-page
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Development
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## 📄 License
+
+This project is proprietary and confidential to ByzantineLabs.
