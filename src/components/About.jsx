@@ -71,7 +71,7 @@ export default function About() {
                         <div className="text-sm text-slate-400">System Monitoring</div>
                     </div>
                  </div>
-                 <div className="space-y-6 pt-8">
+                 <div className="space-y-6">
                     <div className="bg-slate-900/80 p-6 rounded-xl border border-slate-700/50">
                         <div className="text-3xl font-bold text-white mb-1">100%</div>
                         <div className="text-sm text-slate-400">Client Dedication</div>
