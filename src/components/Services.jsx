@@ -1,5 +1,6 @@
 import { LayoutDashboard, ShieldAlert, TrendingUp, Cpu, Lock, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
+import SpotlightCard from "./ui/SpotlightCard";
 
 const services = [
   {
@@ -36,9 +37,12 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-slate-900/50 relative">
+    <section id="services" className="py-24 relative overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] -z-10" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 relative z-10">
           <h2 className="text-base text-sky-400 font-semibold tracking-wide uppercase">What We Do</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
             Comprehensive Web3 Solutions
@@ -48,7 +52,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -56,15 +60,16 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 p-8 rounded-2xl hover:bg-slate-800 transition-all duration-300 hover:shadow-xl hover:shadow-sky-500/10 group"
             >
-              <div className="w-12 h-12 bg-sky-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-sky-500/20 transition-colors">
-                <service.icon className="h-6 w-6 text-sky-400" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
-              <p className="text-slate-400 leading-relaxed">
-                {service.description}
-              </p>
+              <SpotlightCard className="h-full flex flex-col group">
+                <div className="w-12 h-12 bg-sky-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-sky-500/20 transition-colors">
+                  <service.icon className="h-6 w-6 text-sky-400" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
+                <p className="text-slate-400 leading-relaxed flex-grow">
+                  {service.description}
+                </p>
+              </SpotlightCard>
             </motion.div>
           ))}
         </div>
